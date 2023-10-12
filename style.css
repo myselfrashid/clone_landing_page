@@ -1,0 +1,220 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  font-family: "DM Sans";
+}
+
+.body {
+  height: 890px;
+  width: 1400px;
+  background-color: #2f1893;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+nav {
+  position: absolute;
+  width: 972px;
+  height: 40px;
+  top: 65px;
+  left: 213px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav > a {
+  font-size: 24px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  font-size: 18px;
+}
+
+.nav-links > li {
+  padding-inline: 20px;
+  cursor: pointer;
+}
+
+.nav-links > li:nth-child(1) {
+  opacity: 30%;
+}
+
+.nav-links > li:nth-last-child(1) {
+  height: 40px;
+  width: 120px;
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #e93a7d;
+  display: flex;
+  align-items: center;
+}
+
+.main-content {
+  position: absolute;
+  top: 219px;
+  left: 209px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 972px;
+}
+
+.text {
+  height: 496px;
+  width: 427px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.text h2 {
+  width: 424px;
+  height: 217px;
+  font-size: 58px;
+  letter-spacing: -1px;
+  line-height: 70px;
+}
+
+.text h5 {
+  width: 363px;
+  height: 160px;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+.text button {
+  height: 50px;
+  width: 157px;
+  border-radius: 100px;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  background-color: #e93a7d;
+}
+
+.sign-up-form {
+  height: 600px;
+  width: 470px;
+  background-color: #ffffff;
+  padding-inline: 50px;
+  border-radius: 10px;
+  display: flex;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sign-up-form > form > h3 {
+  color: #1e0e62;
+  font-size: 42px;
+  line-height: 52px;
+  letter-spacing: -0.4px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sign-up-form > form > input {
+  border: 2px solid #ebeaed;
+  border-radius: 100px;
+  height: 50px;
+  width: 330px;
+}
+
+::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  padding-left: 20px;
+  color: #15143966;
+}
+
+.checkbox-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #1e0e62;
+}
+
+#checkbox {
+  height: 24px;
+  border-radius: 6px;
+  accent-color: #25dac5;
+  margin-right: 10px;
+}
+
+#checkbox:checked::after {
+  color: #1e0e62;
+}
+
+.checkbox-text {
+  font-size: 16px;
+  line-height: 26px;
+  color: #15143966;
+  font-weight: 400;
+}
+
+input[type="button"] {
+  width: 330px;
+  height: 50px;
+  background-color: #482be7;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.divider {
+  display: flex;
+  color: #15143966;
+  gap: 10px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1 1;
+  border-bottom: 2px solid #ebeaed;
+  margin: auto;
+}
+
+.twitter-button {
+  background-color: #1da1f2;
+  width: 330px;
+  height: 50px;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 100px;
+  border: none;
+}
+
+.sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.sign-in > p {
+  color: #15143966;
+}
+
+.sign-in > a {
+  color: #25dac5;
+}
